@@ -9,14 +9,56 @@
 </head>
 
 <body>
-    <h1 class="titulo-pagina">Propriedades Flexbox</h1>
-    <hr>
+    <body>
+        <h1 class="titulo-pagina">Propriedades Flexbox</h1>
+        <hr>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #000000;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            .active {
+              background-color: #dcca06;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <ul>
+              <li><a class="active" href="#Display">Display</a></li>
+              <li><a href="#flex-direction">Flex-Direction</a></li>
+              <li><a href="#Justify">Justify</a></li>
+              <li><a href="#Align-Items">Align-items</a></li>
+            <li><a href="#Flex-Wrap">Flex-Wrap</a></li>
+            <li><a href="#Flex-Flow">Flex-Flow</a></li>
+            <li><a href="#Align-Content">Align-Content</a></li>
+            </ul>   
 
     <h1 class="nome-da-propriedade">1- display: ativa o Flexbox</h1>
     <h2 class="valor-da-propriedade">display: flex</h2>
     <hr>
 
-    <h1 class="nome-da-propriedade">2- flex-direction: define a direção do eixo principal</h1>
+    <h1 id="flex-direction" class="nome-da-propriedade">2- flex-direction: define a direção do eixo principal</h1>
 
     <h2 class="valor-da-propriedade">flex-direction: row</h2>
     <main class="container-row">
@@ -46,7 +88,7 @@
         <div class="bloco-3"> 3 </div>
     </main>
 
-    <h1 class="nome-da-propriedade">3- justify-content: serve para alinhar os objetos no eixo principal</h1>
+    <h1 id="Justify" class="nome-da-propriedade">3- justify-content: serve para alinhar os objetos no eixo principal</h1>
 
     <h2 class="valor-da-propriedade">justify-content: center</h2>
     <main class="justify-content-center">
@@ -90,7 +132,7 @@
         <div class="bloco-3"> 3 </div>
     </main>
 
-    <h1 class="nome-da-propriedade">4- align-items: alinhar os elementos no eixo perpendicular/secundário</h1>
+    <h1 id="Align-Items" class="nome-da-propriedade">4- align-items: alinhar os elementos no eixo perpendicular/secundário</h1>
 
     <h2 class="valor-da-propriedade">align-items: center</h2>
     <main class="container-align-items-center">
@@ -129,7 +171,7 @@
         <div class="bloco-3-fontes-diferentes"> 3 </div>
     </main>
 
-    <h1 class="nome-da-propriedade">5- flex-wrap -serve para decidir se os elementos irão para a linha de baixo quando chegar ao final do container, ou se eles ficarão espremidos</h1>
+    <h1 id="Flex-Wrap"class="nome-da-propriedade">5- flex-wrap -serve para decidir se os elementos irão para a linha de baixo quando chegar ao final do container, ou se eles ficarão espremidos</h1>
 
     <h2 class="valor-da-propriedade">flex-wrap: nowrap</h2>
     <main class="container-flexwrap-nowrap">
@@ -179,7 +221,7 @@
         <div class="bloco-3"> 12 </div>
     </main>
 
-    <h1 class="nome-da-propriedade-shorthand">6- flex-flow (SHORTHAND) - atalho para as propriedades flex-direction + flex-wrap</h1>
+    <h1 id="Flex-Flow" class="nome-da-propriedade-shorthand">6- flex-flow (SHORTHAND) - atalho para as propriedades flex-direction + flex-wrap</h1>
 
     <h2 class="valor-da-propriedade">flex-flow: row nowrap</h2>
     <main class="container-flexflow-row-nowrap">
@@ -197,7 +239,7 @@
         <div class="bloco-3"> 12 </div>
     </main>
 
-    <h1 class="nome-da-propriedade">7- align-content: para, quando houver quebra de linha (ou seja o flex-wrap) e nós queremos alinhar os elementos no eixo perperndicular/secundário</h1>
+    <h1 id="Align-Content" class="nome-da-propriedade">7- align-content: para, quando houver quebra de linha (ou seja o flex-wrap) e nós queremos alinhar os elementos no eixo perperndicular/secundário</h1>
 
     <h2 class="valor-da-propriedade">aling-content: center</h2>
     <main class="container-align-content-center">
